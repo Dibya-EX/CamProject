@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Camera App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="camera-app">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>Camera App</h1>
+            <nav class="header-controls">
+                <button id="switch-camera">Switch Camera</button>
+                <button id="flash">Toggle Flash</button>
+            </nav>
+        </header>
+
+        <!-- Camera Feed -->
+        <div class="camera-feed">
+            <video id="video" autoplay></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="capture" class="capture-button">Capture</button>
+            <button id="zoom-in">Zoom In</button>
+            <button id="zoom-out">Zoom Out</button>
+            <button id="invert-color">Invert Color</button>
+            <button id="save">Save Photo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
